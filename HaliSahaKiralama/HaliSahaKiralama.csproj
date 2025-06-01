@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE15D96A-FDFD-4737-82ED-40AAC7936E94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HaliSahaKiralama</RootNamespace>
+    <AssemblyName>HaliSahaKiralama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pitch.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>41A202DA949E63AE3D61295A5F943A5262839021</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HaliSahaKiralama_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminduzen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminduzen.Designer.cs">
+      <DependentUpon>adminduzen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminyonetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminyonetim.Designer.cs">
+      <DependentUpon>adminyonetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="animasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="animasyon.Designer.cs">
+      <DependentUpon>animasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglanClass1.cs" />
+    <Compile Include="frmanaekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmanaekran.Designer.cs">
+      <DependentUpon>frmanaekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkarsilasma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkarsilasma.Designer.cs">
+      <DependentUpon>frmkarsilasma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsahaduzenlemeekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsahaduzenlemeekrani.Designer.cs">
+      <DependentUpon>frmsahaduzenlemeekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsahakayitekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsahakayitekrani.Designer.cs">
+      <DependentUpon>Frmsahakayitekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsahalistesics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsahalistesics.Designer.cs">
+      <DependentUpon>frmsahalistesics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsahasec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsahasec.Designer.cs">
+      <DependentUpon>Frmsahasec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsecimekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsecimekrani.Designer.cs">
+      <DependentUpon>Frmsecimekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitolusergiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitolusergiris.Designer.cs">
+      <DependentUpon>kayitolusergiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkleForm.Designer.cs">
+      <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciYonetimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciYonetimForm.Designer.cs">
+      <DependentUpon>KullaniciYonetimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sahakontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sahakontrol.Designer.cs">
+      <DependentUpon>Sahakontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sahalar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sahalar.Designer.cs">
+      <DependentUpon>sahalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifremiunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiunuttum.Designer.cs">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifremiunuttumadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiunuttumadmin.Designer.cs">
+      <DependentUpon>sifremiunuttumadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifresecimekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifresecimekrani.Designer.cs">
+      <DependentUpon>sifresecimekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreSifirlaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreSifirlaForm.Designer.cs">
+      <DependentUpon>SifreSifirlaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifresifirlamaadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifresifirlamaadmin.Designer.cs">
+      <DependentUpon>sifresifirlamaadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usergiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usergiris.Designer.cs">
+      <DependentUpon>usergiris.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminduzen.resx">
+      <DependentUpon>adminduzen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminyonetim.resx">
+      <DependentUpon>adminyonetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="animasyon.resx">
+      <DependentUpon>animasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmanaekran.resx">
+      <DependentUpon>frmanaekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkarsilasma.resx">
+      <DependentUpon>frmkarsilasma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsahaduzenlemeekrani.resx">
+      <DependentUpon>frmsahaduzenlemeekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsahakayitekrani.resx">
+      <DependentUpon>Frmsahakayitekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsahalistesics.resx">
+      <DependentUpon>frmsahalistesics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsahasec.resx">
+      <DependentUpon>Frmsahasec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsecimekrani.resx">
+      <DependentUpon>Frmsecimekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitolusergiris.resx">
+      <DependentUpon>kayitolusergiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkleForm.resx">
+      <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciYonetimForm.resx">
+      <DependentUpon>KullaniciYonetimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sahakontrol.resx">
+      <DependentUpon>Sahakontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sahalar.resx">
+      <DependentUpon>sahalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremiunuttum.resx">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremiunuttumadmin.resx">
+      <DependentUpon>sifremiunuttumadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifresecimekrani.resx">
+      <DependentUpon>sifresecimekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreSifirlaForm.resx">
+      <DependentUpon>SifreSifirlaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifresifirlamaadmin.resx">
+      <DependentUpon>sifresifirlamaadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usergiris.resx">
+      <DependentUpon>usergiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HaliSahaKiralama_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kick-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vidooo1.gif" />
+    <None Include="Resources\vidooo.gif" />
+    <None Include="Resources\user %286%29.png" />
+    <None Include="Resources\user %289%29.png" />
+    <None Include="Resources\user %288%29.png" />
+    <None Include="Resources\user %287%29.png" />
+    <None Include="Resources\giphy %281%29.gif" />
+    <None Include="Resources\giphy %282%29.gif" />
+    <None Include="Resources\giphy-4--unscreen.gif" />
+    <None Include="Resources\panel.jpg" />
+    <None Include="Resources\duzen.jpg" />
+    <None Include="Resources\10813372.png" />
+    <None Include="Resources\10813372-removebg-preview.png" />
+    <None Include="Resources\DUZEN1.jpg" />
+    <None Include="Resources\kullanıcıı.png" />
+    <None Include="Resources\kullanıcıı-removebg-preview.png" />
+    <None Include="Resources\kul0.png" />
+    <None Include="Resources\kul1.png" />
+    <None Include="Resources\kul11.png" />
+    <Content Include="HalisahaVeritabanim.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HalisahaVeritabanim_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pitch.ico" />
+    <Content Include="Resources\saha_icon.png" />
+    <None Include="Resources\saha_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

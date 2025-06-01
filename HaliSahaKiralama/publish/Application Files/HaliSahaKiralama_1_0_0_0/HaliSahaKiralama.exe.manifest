@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="HaliSahaKiralama.exe" version="1.0.0.0" publicKeyToken="8265994464557a59" language="neutral" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="pitch.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HaliSahaKiralama" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="HaliSahaKiralama.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaliSahaKiralama.exe" size="19433968">
+      <assemblyIdentity name="HaliSahaKiralama" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FYcHJMZmy7NsKUJy2qJbHzk/CqBDSynhsV7u7lLKAEc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="HaliSahaKiralama.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pitch.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PCt5ocvhdfuT8B0inz6xDIIgIr7z1Ffy5Lo4ZfloVUs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\saha_icon.png" size="4294">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f8KnRx7kHUI9ovuvIaeurOpPtebjb7WKjoq0d/nO5Vc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-O637T3V\ASUS TUF" issuerKeyHash="1bdbfcd4d6bdb9088e43d8a78802ecf0b4a82ee9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tZRLyX5fccehGLv+yyxMgfBcqbwVAXWvQX2R7aGgyNI=</DigestValue></Reference></SignedInfo><SignatureValue>QmyJb1sCoXWuw7aQDceANAiSF3F94Lieo/IdsLqwRxBUL9fV/srSwecfAe34oYj48Ic1giUjDS2neWyjPJgs4BU8qfph3+sOPnWhaM3Ai7eYf83DEkbPgcpYITgbbJnYIyA3+lW9no22J5udiiWTKQj9NbhHgM/Gs5EyDAwzvQQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0awp3r/dL6LmQHyGjTlBepz+Eo395KF156+gjwtkPufE66nmjFTFXXp6OWCdXZd2/atIQoJqtCXXzqU6nu9yc2MllkNOHdNdBqRhera0i4frwzueFi10h7Y4/YlK2dbQxk8/L3UE04d4HKkdWYKQSJ6UZ9g2PrF1257jJUA1UKE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d2c8a0a1ed917d41af750115bca95cf0814c2ccbfebb18a1c7715f7ec94b94b5" Description="" Url=""><as:assemblyIdentity name="HaliSahaKiralama.exe" version="1.0.0.0" publicKeyToken="8265994464557a59" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-O637T3V\ASUS TUF</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>8/cBXYGWYqTY5t2WAzfz81e+E0JKKjUQvgjo5X06BNU=</DigestValue></Reference></SignedInfo><SignatureValue>P8xd6A7XoO8GmhDQqx32xyr0unam5wj5odsdqceVl0624+sEicaK1h6XOfL0qd6n3sCWvBG7KhY4zKP5hjpJ0oC+lSRls50T1dx7plG5r9g7qroMGevIhFwOrVcZlS53fPwBEx+9017MWQ4KbWdNebCYRF2OOwo1Tjm50gl6g48=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0awp3r/dL6LmQHyGjTlBepz+Eo395KF156+gjwtkPufE66nmjFTFXXp6OWCdXZd2/atIQoJqtCXXzqU6nu9yc2MllkNOHdNdBqRhera0i4frwzueFi10h7Y4/YlK2dbQxk8/L3UE04d4HKkdWYKQSJ6UZ9g2PrF1257jJUA1UKE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQGGbhFtex2ZNI7QcC2GuJqTANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAE8ANgAzADcAVAAzAFYAXABBAFMAVQBTACAAVABVAEYwHhcNMjUwNTI0MTcwOTM1WhcNMjYwNTI0MjMwOTM1WjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAE8ANgAzADcAVAAzAFYAXABBAFMAVQBTACAAVABVAEYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANGsKd6/3S+i5kB8ho05QXqc/hKN/eShdeevoI8LZD7nxOup5oxUxV16ejlgnV2Xdv2rSEKCarQl186lOp7vcnNjJZZDTh3TXQakYXq2tIuH68M7nhYtdIe2OP2JStnW0MZPPy91BNOHeBypHVmCkEielGfYNj6xddue4yVANVChAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAIiSf1BuZbW5RD6QvIyxhnG9HQ3RNh8lztF+gbzAleFZCAxtyX4+dMCUS1w4S5pysOIuwOe2lDd0EkAdVa1tu2ALmGMJUFEgnJJ/g7otR8qubzYM7o2cfMkz368Xow7XHxCDLz5bMu5hfUNAPAJwEWkVAg/rY2D8mgeJa88eYfAk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
